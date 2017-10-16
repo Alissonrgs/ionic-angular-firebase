@@ -1,0 +1,25 @@
+<!--
+  Generated template for the ChannelPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ title }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let channel of channels" (click)="open(channel)">
+      {{ channel.channel.name }}
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-input [(ngModel)]="new_channel"></ion-input>
+  <button ion-button (click)="create_channel()">Create Channel</button>
+</ion-footer>
