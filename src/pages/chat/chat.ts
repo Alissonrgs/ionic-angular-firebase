@@ -39,5 +39,6 @@ export class ChatPage {
       user: "alissonrgs",
       text: this.send_message
     })
+    this.db.object('channels/' + this.channel.key).update({last_message: this.send_message})
   }
 }

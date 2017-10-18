@@ -1,3 +1,26 @@
 page-channel {
 
+    ion-item{
+
+        cursor: pointer;
+        transition: all .9s ease;
+
+        ul{
+            padding-left: 16px;
+            list-style: none;
+            :first-child{
+                font-weight: bold;
+            }
+            :last-child{
+                color: #bbbbbb;
+                font-size: 0.8em;
+            }
+        }
+
+        &:hover{
+
+            background-color: #eeeeee;
+        }
+    }
+
 }
